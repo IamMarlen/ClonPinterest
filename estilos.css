@@ -1,57 +1,118 @@
+#content {
+    margin: 0;
+    padding: 0;
+}
+
+
 .contenedor {
     justify-content: space-around;
+    position: absolute;
     width: 100%;
     border: 5px solid #ffffff;
     background-color: #ffffff;
     color: white;
-    columns: 4 320px;
-    column-gap: 3em;
+    columns: 5 200px;
+    column-gap: 18px;
     margin: top;
 }
 
 
 #navbar-pinterest {
-    color: rgb( 234, 5, 5 );
-    text-align: center;
-    padding: 16px 10px;
-    width: 820px;
+    top: 15px;
+    padding-top: 7px;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    display: flex start;
+    cursor: pointer;
+}
+
+#HEC {
+    margin: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    gap: 10px;
+    cursor: pointer;
 }
 
 img {
     max-width: 100%;
-    outline: 5px solid wheat;
-    border-radius: 15px;
+    outline: 5px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    cursor: zoom-in;
+    vertical-align: middle;
 }
 
-input {
+.finder {
     height: 100%;
-    width: 100%;
-    border-radius: 15px;
+    width: 50%;
+    border-radius: 25px;
     border: 20px;
     background-color: rgb(213, 219, 219 );
     font-size: 20px;
     font-weight: normal;
     outline: none;
     box-sizing: border-box;
-    position: relative;
-    padding: 15px;
+    padding: 29px;
 }
 
-.card-image :hover {
+@media print {
+    /* … */
+  }
+
+
+.card-image:hover {
     font-size: 4rem;
     background-color: transparent;
+    position: relative;   
+}
+
+button {
+    cursor: pointer;
+    bottom: end;
+    
+}
+
+button:hover {
+    display: block;
+    background-color: rgb(213, 26, 7);
+    border-radius:45px;
+    border: rgb(213, 26, 7);
+    color: #ffffff;
+    padding: 15px;
+    
 }
 
 #notificaciones {
-    bottom: unset; 
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 1px;
+    cursor: pointer;
 }
 
 #mensajes {
-    color: aquamarine;
-    display: grid;
-    grid-area: extra;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 1px;
+    cursor: pointer;
 }
 
-#profile-img {
-    color: blue;
+#perfil {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 1px;
+    cursor: pointer;
 }
