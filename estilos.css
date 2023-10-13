@@ -6,13 +6,13 @@
 
 .contenedor {
     justify-content: space-around;
-    position: absolute;
     width: 100%;
     border: 5px solid #ffffff;
     background-color: #ffffff;
     color: white;
     columns: 5 200px;
     column-gap: 18px;
+    gap: 25px;
     margin: top;
 }
 
@@ -47,7 +47,6 @@ img {
     outline: 5px solid rgb(255, 255, 255);
     border-radius: 25px;
     cursor: zoom-in;
-    vertical-align: middle;
 }
 
 .finder {
@@ -67,27 +66,20 @@ img {
     /* … */
   }
 
-
 .card-image:hover {
-    font-size: 4rem;
-    background-color: transparent;
-    position: relative;   
+    font-size: 1rem;
+    background-color: transparent;  
+    position: relative;
 }
 
 button {
+    position: absolute;
     cursor: pointer;
-    bottom: end;
-    
-}
-
-button:hover {
-    display: block;
     background-color: rgb(213, 26, 7);
     border-radius:45px;
     border: rgb(213, 26, 7);
     color: #ffffff;
-    padding: 15px;
-    
+    padding: 15px;  
 }
 
 #notificaciones {
